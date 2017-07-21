@@ -3,6 +3,8 @@ Linux+X Windows automatic keyboard and mouse clicker
 
 `clicker` waits in a loop until `numlock` is active, at which point it will repeatedly press the specified key(s) at the specified interval(s) until suspended (by toggling `numlock`) or terminated (`<ctrl+c>` will do).
 
+There's usually a short delay, up to 1 second, after pressing `numlock` before the clicking stops/starts.  This is because `numlock` is only polled once per second, in order to minimize wakeups and be battery friendly while not clicking.
+
 # usage
 Running clicker with no additional options causes it to click the primary mouse button ~20/sec while `numlock` is enabled.
 
