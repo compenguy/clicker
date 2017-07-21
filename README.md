@@ -22,3 +22,17 @@ Application Options:
   -k, --keypress=KEY              Press key with the X11 name of KEY at regular intervals. Default: none
   -p, --keypress-interval=N       Delay in msecs between key presses. Default: 1000, 0: disable
 ```
+
+# how to build
+Prerequisites: 
+* gcc
+* pkg-config
+* the following pkg-config packages:
+   * x11 (libx11-dev)
+   * xtst (libxtst-dev)
+   * xext (libxext-dev)
+   * glib-2.0 (libglib2.0-dev)
+
+Run `make clicker.release`
+
+Copy `clicker.release` anywhere you want - `~/`, `/usr/local/bin`, etc.  You'll probably want to rename it as just `clicker`, though.
