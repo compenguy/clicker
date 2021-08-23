@@ -36,5 +36,7 @@ Prerequisites:
    * glib-2.0 (libglib2.0-dev)
 
 Run `make clicker.release`
+=======
+>>>>>>> 809e5b6 (Minor README reformatting)
 
 Copy `clicker.release` anywhere you want - `~/`, `/usr/local/bin`, etc.  You'll probably want to rename it as just `clicker`, though.
